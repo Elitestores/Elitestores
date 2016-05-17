@@ -1,0 +1,14 @@
+<div id="header-login-menu" class="block block-cart skip-content" style="display:none;position:absolute;width:300px;background:white;z-index:1;">
+    <ul>
+		<li><a href="<?php $this->getUrl()?>/customer/account/logout"><?php echo $this->__('Logout') ?></a></li>
+		<li><a href="<?php $this->getUrl()?>/customer/account"><?php echo $this->__('My Account') ?></a></li>
+	</ul>
+</div>
+<script>
+	jQuery('#header-login-trigger-menu').hover(function(){
+		jQuery('#header-login-menu').show();	
+	},function(){
+		jQuery('#header-login-menu').hide();
+		});
+	
+</script>

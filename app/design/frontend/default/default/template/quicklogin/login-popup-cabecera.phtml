@@ -1,0 +1,20 @@
+<a href="<?php echo Mage::getUrl('customer/account/login'); ?>"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_SKIN);?>frontend/default/elite/images/RRSS/SIGNICON.png" class="icon-top" alt="sing or register"/></a>
+<div id="header-login-cabecera" class="login-block" >
+    <ul>
+		<li><a href="<?php echo $this->getBaseUrl()?>customer/account/logout"><?php echo $this->__('Logout') ?></a></li>
+		<li><a href="<?php echo $this->getBaseUrl()?>customer/account"><?php echo $this->__('My Account') ?></a></li>
+	</ul>
+</div>
+<script>
+	jQuery('#header-login-trigger-cabecera').hover(function(){
+		jQuery('#header-login-cabecera').show();	
+	},function(){
+		jQuery('#header-login-cabecera').hide();
+		});
+	jQuery('#header-login-trigger-menu').hover(function(){
+		jQuery('#header-login-cabecera').show();	
+	},function(){
+		jQuery('#header-login-cabecera').hide();
+		});
+	
+</script>
